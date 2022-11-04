@@ -28,34 +28,37 @@ body {
 	border-radius: 8px;
 }
 
-figure {
-	width: 100%;
-	aspect-ratio: 1/1;
+.container {
+	width: 302px;
+	height: auto;
 	border-radius: 8px;
 	overflow: hidden;
-	
-
+	position: relative;
 }
 
-figure .equilibrium {
+.equilibrium {
 	width: 100%;
 	height: auto;
 	display: block;
 }
 
 .overlay {
-	height: 100%;
-	display: grid;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
 	opacity: 0;
 	transition: .5s ease;
-	background-color: hsl(178, 100%, 50%);
+	background-color: hsla(178, 100%, 50%, .2);
+	display: flex;
   }
 
 .overlay:hover {
-	opacity: .5;
+	opacity: 1;
   }
 
-figure .view {
+.view {
 	margin: auto;
 }
 
