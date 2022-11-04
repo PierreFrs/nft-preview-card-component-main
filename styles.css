@@ -96,14 +96,16 @@ p {
 
 .ethereum {
 	color: hsl(178, 100%, 50%);
-	display: flex;
-	align-items: center;
 }
 
 .time {
 	color: hsl(215, 51%, 70%);
+}
+
+.ethereum, .time {
 	display: flex;
 	align-items: center;
+	font-size: .8rem;
 }
 
 .values .ethereum img {
@@ -137,6 +139,7 @@ p {
 .avatar h3 {
 	color: hsl(215, 51%, 70%);
 	font-weight: 300;
+	font-size: 1rem;
 }
 
 .avatar h3 a {
