@@ -1,0 +1,145 @@
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+html {
+	font-size: 18px;
+	font-family: sans-serif;
+}
+
+body {
+	background-color: hsl(217, 54%, 11%);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.card {
+	background-color: hsl(216, 50%, 16%);
+	width: 500px;
+	height: 800px;
+	padding: 3%;
+	border-radius: 10px;
+}
+
+figure {
+	height: 57%;
+	width: auto;
+	background-color: hsl(178, 100%, 50%);
+	border-radius: 10px;
+	overflow: hidden;
+}
+
+figure .equilibrium {
+	max-width: 100%;
+	height: auto;
+	display: block;
+
+}
+
+figure .view {
+	display: block;
+	margin: 45% auto;
+
+}
+
+figure .equilibrium:hover {
+	opacity: 0.4;
+}
+
+.content {
+	display: flex;
+	flex-direction: column;
+	padding: 7% 0;
+}
+
+.reference {
+	font-size: 1.5rem;
+	color: white;
+	text-decoration: none;
+}
+
+.reference:hover
+ {
+	color: hsl(178, 100%, 50%);
+}
+
+p {
+	color: hsl(215, 51%, 70%);
+	margin-top: 7%;
+	line-height: 1.5;
+}
+
+.values {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 5%;
+	padding-bottom: 7%;
+	border-bottom: 2px solid hsl(215, 32%, 27%);
+}
+
+.ethereum {
+	color: hsl(178, 100%, 50%);
+}
+
+.time {
+	color: hsl(215, 51%, 70%);
+}
+
+.ethereum, .time {
+	display: flex;
+}
+
+.values .ethereum img {
+	width: 10px;
+	height: 20px;
+	margin-right: 10px;
+}
+
+.values .time img {
+	width: 20px;
+	height: 20px;
+	margin-right: 10px;
+}
+
+.avatar {
+	display: flex;
+	align-items: center;
+	margin-top: 20px;
+}
+
+.avatar img {
+	height: 60px;
+	width: auto;
+	display: block;
+	border: 2px solid whitesmoke;
+	border-radius: 100%;
+	margin-right: 20px;
+}
+
+.avatar h3 {
+	color: hsl(215, 51%, 70%);
+}
+
+.avatar h3 a {
+	color: white;
+	text-decoration: none;
+}
+
+.avatar h3 a:hover {
+	color: hsl(178, 100%, 50%);
+}
+
+.attribution {
+	margin-top: 50px;
+}
+
+@media only screen and (max-width: 375px) {
+	.card {
+		width: 375px;
+		height: 600px;
+}
