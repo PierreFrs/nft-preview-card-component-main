@@ -6,7 +6,9 @@
 
 html {
 	font-size: 18px;
-	font-family: sans-serif;
+	font-family: 'Outfit', sans-serif;
+	height: 100%;
+	display: grid;
 }
 
 body {
@@ -15,49 +17,55 @@ body {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	margin: auto;
 }
 
 .card {
 	background-color: hsl(216, 50%, 16%);
-	width: 500px;
-	height: 800px;
-	padding: 3%;
-	border-radius: 10px;
+	width: 350px;
+	height: auto;
+	padding: 24px;
+	border-radius: 8px;
 }
 
 figure {
-	height: 57%;
-	width: auto;
-	background-color: hsl(178, 100%, 50%);
-	border-radius: 10px;
+	width: 100%;
+	aspect-ratio: 1/1;
+	border-radius: 8px;
 	overflow: hidden;
+	
+
 }
 
 figure .equilibrium {
-	max-width: 100%;
+	width: 100%;
 	height: auto;
 	display: block;
-
 }
+
+.overlay {
+	height: 100%;
+	display: grid;
+	opacity: 0;
+	transition: .5s ease;
+	background-color: hsl(178, 100%, 50%);
+  }
+
+.overlay:hover {
+	opacity: .5;
+  }
 
 figure .view {
-	display: block;
-	margin: 45% auto;
-
-}
-
-figure .equilibrium:hover {
-	opacity: 0.4;
+	margin: auto;
 }
 
 .content {
 	display: flex;
 	flex-direction: column;
-	padding: 7% 0;
 }
 
 .reference {
-	font-size: 1.5rem;
+	font-size: 1.2rem;
 	color: white;
 	text-decoration: none;
 }
@@ -68,52 +76,54 @@ figure .equilibrium:hover {
 }
 
 p {
-	color: hsl(215, 51%, 70%);
-	margin-top: 7%;
+	color: hsl(215, 51%, 80%);
+	margin-top: 16px;
 	line-height: 1.5;
+	font-weight: 300;
 }
 
 .values {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	margin-top: 5%;
-	padding-bottom: 7%;
+	margin-top: 24px;
+	padding-bottom: 24px;
 	border-bottom: 2px solid hsl(215, 32%, 27%);
 }
 
 .ethereum {
 	color: hsl(178, 100%, 50%);
+	display: flex;
+	align-items: center;
 }
 
 .time {
 	color: hsl(215, 51%, 70%);
-}
-
-.ethereum, .time {
 	display: flex;
+	align-items: center;
 }
 
 .values .ethereum img {
-	width: 10px;
-	height: 20px;
-	margin-right: 10px;
+	width: 11px;
+	height: 18px;
+	margin-right: 7px;
 }
 
 .values .time img {
-	width: 20px;
-	height: 20px;
-	margin-right: 10px;
+	width: 16px;
+	height: 16px;
+	margin-right: 7.7px;
 }
 
 .avatar {
 	display: flex;
 	align-items: center;
-	margin-top: 20px;
+	margin-top: 16px;
+	margin-bottom: 8px;
 }
 
 .avatar img {
-	height: 60px;
+	height: 33px;
 	width: auto;
 	display: block;
 	border: 2px solid whitesmoke;
@@ -123,6 +133,7 @@ p {
 
 .avatar h3 {
 	color: hsl(215, 51%, 70%);
+	font-weight: 300;
 }
 
 .avatar h3 a {
@@ -135,11 +146,11 @@ p {
 }
 
 .attribution {
-	margin-top: 50px;
+	margin: 50px auto;
 }
 
 @media only screen and (max-width: 375px) {
 	.card {
-		width: 375px;
-		height: 600px;
+		margin: auto 24px;
+	}
 }
